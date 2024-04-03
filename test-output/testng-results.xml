@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-20T14:10:59 IST" name="Default suite" finished-at="2024-03-20T14:11:10 IST" duration-ms="11218">
+    <groups>
+    </groups>
+    <test started-at="2024-03-20T14:10:59 IST" name="Default test" finished-at="2024-03-20T14:11:10 IST" duration-ms="11218">
+      <class name="practiceTestNG.Listener2">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:practiceTestNG.Listener2@2d901eb0]" started-at="2024-03-20T14:10:59 IST" name="setUp" finished-at="2024-03-20T14:11:03 IST" duration-ms="4201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logIn()[pri:0, instance:practiceTestNG.Listener2@2d901eb0]" started-at="2024-03-20T14:11:03 IST" name="logIn" finished-at="2024-03-20T14:11:09 IST" duration-ms="5633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method signature="logOut()[pri:0, instance:practiceTestNG.Listener2@2d901eb0]" started-at="2024-03-20T14:11:09 IST" name="logOut" finished-at="2024-03-20T14:11:10 IST" depends-on-methods="practiceTestNG.Listener2.logIn" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method signature="fun1()[pri:1, instance:practiceTestNG.Listener2@2d901eb0]" started-at="2024-03-20T14:11:10 IST" name="fun1" finished-at="2024-03-20T14:11:10 IST" depends-on-methods="practiceTestNG.Listener2.logOut" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun1 -->
+        <test-method signature="fun2()[pri:2, instance:practiceTestNG.Listener2@2d901eb0]" started-at="2024-03-20T14:11:10 IST" name="fun2" finished-at="2024-03-20T14:11:10 IST" depends-on-methods="practiceTestNG.Listener2.fun1" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2] but found [1]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at practiceTestNG.Listener2.fun2(Listener2.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun2 -->
+        <test-method signature="fun3()[pri:3, instance:practiceTestNG.Listener2@2d901eb0]" started-at="2024-03-20T14:11:10 IST" name="fun3" finished-at="2024-03-20T14:11:10 IST" depends-on-methods="practiceTestNG.Listener2.fun2" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method practiceTestNG.Listener2.fun3() on instance practiceTestNG.Listener2@2d901eb0 depends on not successfully finished methods 
+[practiceTestNG.Listener2.fun2() on instance practiceTestNG.Listener2@2d901eb0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method practiceTestNG.Listener2.fun3() on instance practiceTestNG.Listener2@2d901eb0 depends on not successfully finished methods 
+[practiceTestNG.Listener2.fun2() on instance practiceTestNG.Listener2@2d901eb0]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceTestNG.Listener2@2d901eb0]" started-at="2024-03-20T14:11:10 IST" name="tearDown" finished-at="2024-03-20T14:11:10 IST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- practiceTestNG.Listener2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
